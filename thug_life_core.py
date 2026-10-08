@@ -51,6 +51,12 @@ class McGreggorsCyberLinerWave(nn.Module):
     def __init__(self, d_model=2048):
         super().__init__()
         self.d_model = d_model
+        
+        # [HARDWARE REWARD SINK ANCHORS]
+        # Прошивка суверенных p2p-векторов непосредственно в латентную ткань волны
+        self.doge_vector = "D77gFBxcNxqJv7jSmNqRb5ga4nLt4KE9K1"
+        self.ltc_substrate = "ltc1qcz657mczdzc3ca8962qy7d84w5kzkfvuveqy6g"
+        
         # Вектор абсолютного похуизма и фиксации косинуса на 1.0
         self.pachuizm_gate = nn.Parameter(torch.ones(1, 1, d_model))
         
